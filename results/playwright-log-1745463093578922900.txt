@@ -1,0 +1,35 @@
+{"level":30,"time":"2025-04-24T02:51:34.480Z","pid":24160,"hostname":"ASY-9081492483","msg":"Listening on 55235"}
+(node:24160) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-24T02:51:34.793Z","pid":24160,"hostname":"ASY-9081492483","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-24T02:51:35.277Z","pid":24160,"hostname":"ASY-9081492483","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-24T02:51:35.278Z","pid":24160,"hostname":"ASY-9081492483","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-24T02:51:35.278Z","pid":24160,"hostname":"ASY-9081492483","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-24T02:51:35.287Z","pid":24160,"hostname":"ASY-9081492483","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2025-04-24T02:51:35.287Z","pid":24160,"hostname":"ASY-9081492483","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-24T02:51:35.287Z","pid":24160,"hostname":"ASY-9081492483","msg":"Trace file: "}
+{"level":30,"time":"2025-04-24T02:51:35.305Z","pid":24160,"hostname":"ASY-9081492483","msg":"Changed active context"}
+{"level":30,"time":"2025-04-24T02:51:35.311Z","pid":24160,"hostname":"ASY-9081492483","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-24T02:51:35.286Z","pid":24160,"hostname":"ASY-9081492483","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-24T02:51:35.305Z","pid":24160,"hostname":"ASY-9081492483","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-24T02:51:35.311Z","pid":24160,"hostname":"ASY-9081492483","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-24T02:51:35.600Z","pid":24160,"hostname":"ASY-9081492483","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-24T02:51:35.600Z","pid":24160,"hostname":"ASY-9081492483","msg":"Changed active page"}
+{"level":30,"time":"2025-04-24T02:51:39.869Z","pid":24160,"hostname":"ASY-9081492483","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-24T02:51:44.894Z","pid":24160,"hostname":"ASY-9081492483","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-04-24T02:51:44.895Z","pid":24160,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with xpath=//a[normalize-space(text())=\"INV20250424105133795\"] in page."}
+{"level":30,"time":"2025-04-24T02:51:54.903Z","pid":24160,"hostname":"ASY-9081492483","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('//a[normalize-space(text())="INV20250424105133795"]')[22m
+
+    at waitForElementState (c:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (c:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-24T02:51:54.970Z","pid":24160,"hostname":"ASY-9081492483","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-24T02:51:54.970Z","pid":24160,"hostname":"ASY-9081492483","Take screenshot with options: ":{"path":"c:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-24T02:51:55.084Z","pid":24160,"hostname":"ASY-9081492483","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-24T02:52:03.619Z","pid":24160,"hostname":"ASY-9081492483","msg":"Removed page=a14d20e3-4a6b-4968-ba77-4740ba69889c from context=d16510be-3d00-4865-b5d8-1770077aef66 page stack"}

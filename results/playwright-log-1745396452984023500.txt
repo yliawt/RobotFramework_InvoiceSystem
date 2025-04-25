@@ -1,0 +1,70 @@
+{"level":30,"time":"2025-04-23T08:20:54.505Z","pid":12828,"hostname":"ASY-9081492483","msg":"Listening on 62771"}
+(node:12828) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-23T08:20:54.875Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-23T08:20:55.737Z","pid":12828,"hostname":"ASY-9081492483","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-23T08:20:55.738Z","pid":12828,"hostname":"ASY-9081492483","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-23T08:20:55.752Z","pid":12828,"hostname":"ASY-9081492483","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-04-23T08:20:55.738Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-23T08:20:55.753Z","pid":12828,"hostname":"ASY-9081492483","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-23T08:20:55.753Z","pid":12828,"hostname":"ASY-9081492483","msg":"Trace file: "}
+{"level":30,"time":"2025-04-23T08:20:55.752Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-23T08:20:55.778Z","pid":12828,"hostname":"ASY-9081492483","msg":"Changed active context"}
+{"level":30,"time":"2025-04-23T08:20:55.779Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-23T08:20:55.791Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-23T08:20:55.792Z","pid":12828,"hostname":"ASY-9081492483","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-23T08:20:56.258Z","pid":12828,"hostname":"ASY-9081492483","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-23T08:20:56.259Z","pid":12828,"hostname":"ASY-9081492483","msg":"Changed active page"}
+{"level":30,"time":"2025-04-23T08:21:01.875Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-23T08:21:01.910Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-23T08:21:01.911Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=li.sidebar-list > a[href=\"#/addInvoice\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:02.065Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method click"}
+{"level":30,"time":"2025-04-23T08:21:02.094Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:02.094Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"invoice\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:03.499Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.507Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.508Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"company\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:03.615Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.623Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.623Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"type\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:03.753Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.762Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.763Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"price\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:03.815Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.824Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=select#selectStatus in page."}
+{"level":30,"time":"2025-04-23T08:21:03.823Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-04-23T08:21:03.877Z","pid":12828,"hostname":"ASY-9081492483","msg":"Option entries: 4"}
+{"level":30,"time":"2025-04-23T08:21:03.878Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-04-23T08:21:03.878Z","pid":12828,"hostname":"ASY-9081492483","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-04-23T08:21:03.890Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:03.890Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"dueDate\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:03.998Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:04.011Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:04.011Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=input[name=\"comment\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:04.182Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-23T08:21:04.193Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-23T08:21:04.193Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with xpath=//button[text()='Create'] in page."}
+{"level":30,"time":"2025-04-23T08:21:04.249Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method click"}
+{"level":30,"time":"2025-04-23T08:21:04.259Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-04-23T08:21:04.259Z","pid":12828,"hostname":"ASY-9081492483","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2025-04-23T08:21:04.263Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-04-23T08:21:04.274Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-23T08:21:04.274Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with css=li.sidebar-list > a[href=\"#/tables\"] in page."}
+{"level":30,"time":"2025-04-23T08:21:04.350Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method click"}
+{"level":30,"time":"2025-04-23T08:21:04.358Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-23T08:21:04.358Z","pid":12828,"hostname":"ASY-9081492483","msg":"Strict mode is enabled, find Locator with //tr[td[contains(text(),\"INV10031\")]] in page."}
+{"level":30,"time":"2025-04-23T08:21:14.363Z","pid":12828,"hostname":"ASY-9081492483","msg":"Error of node method  getElement"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('//tr[td[contains(text(),"INV10031")]]')[22m
+
+    at getElement (c:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11165:17)
+    at async PlaywrightServer.getElement (c:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-23T08:21:14.401Z","pid":12828,"hostname":"ASY-9081492483","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-23T08:21:14.401Z","pid":12828,"hostname":"ASY-9081492483","Take screenshot with options: ":{"path":"c:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-23T08:21:14.529Z","pid":12828,"hostname":"ASY-9081492483","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-23T08:23:01.648Z","pid":12828,"hostname":"ASY-9081492483","msg":"Removed page=f3a3927b-6ea7-4d0b-aae9-3079f775e626 from context=df780b6f-4bee-48e0-97d1-11ecebdd8e7a page stack"}

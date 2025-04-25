@@ -1,0 +1,1998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-24T13:57:49.523410" rpa="false" schemaversion="5">
+<suite id="s1" name="Updated-Beufort-Project" source="C:\Users\LIAW004\projects\Updated-Beufort-Project">
+<suite id="s1-s1" name="Tests" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests">
+<suite id="s1-s1-s1" name="Test GUIs" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs">
+<suite id="s1-s1-s1-s1" name="Homepage" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage">
+<suite id="s1-s1-s1-s1-s1" name="01 Add Invoice" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage\01_Add_Invoice.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Add New Invoice" line="7">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:57:49.731147" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:57:49.732145" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\browser\\traces\\temp\\5b82e498-e606-447d-9fd0-5a38dbc8a1c0"}</msg>
+<msg time="2025-04-24T13:57:49.758830" level="INFO">Starting Browser process C:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 55014</msg>
+<msg time="2025-04-24T13:57:49.758989" level="INFO">Node startup parameters: ['node', 'C:\\Users\\LIAW004\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55014']</msg>
+<msg time="2025-04-24T13:57:51.235377" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\browser\\traces\\temp\\5b82e498-e606-447d-9fd0-5a38dbc8a1c0"}</msg>
+<msg time="2025-04-24T13:57:51.237953" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:57:51.262318" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:57:51.262444" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:58:01.658794" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-24T13:58:01.658892" level="INFO">See also file:///C:/Users/LIAW004/projects/Updated-Beufort-Project/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-24T13:58:01.659175" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://inv.beaufortfairmont.com/#/", waiting until "load"
+</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="FAIL" start="2025-04-24T13:57:49.730661" elapsed="12.071077">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://inv.beaufortfairmont.com/#/", waiting until "load"
+</status>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<status status="NOT RUN" start="2025-04-24T13:58:01.802016" elapsed="0.000219"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:57:49.729917" elapsed="12.072474">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://inv.beaufortfairmont.com/#/", waiting until "load"
+</status>
+</kw>
+<msg time="2025-04-24T13:58:01.809546" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:58:01.816403" level="INFO">Switching context to context=71794597-68a2-4117-98c4-c1d13c88df1f in CURRENT</msg>
+<msg time="2025-04-24T13:58:01.821484" level="INFO">Successfully changed active context: context=71794597-68a2-4117-98c4-c1d13c88df1f</msg>
+<msg time="2025-04-24T13:58:01.830501" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-24T13:57:49.728872" elapsed="12.073905">Setup failed:
+TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://inv.beaufortfairmont.com/#/", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-24T13:57:49.556781" elapsed="12.275025"/>
+</suite>
+<suite id="s1-s1-s1-s1-s2" name="02 Edit Invoice" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage\02_Edit_Invoice.robot">
+<test id="s1-s1-s1-s1-s2-t1" name="Update Existing Invoice" line="8">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:58:01.855774" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:58:01.856284" level="INFO">Switching browser to browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:01.859142" level="INFO">Successfully changed active browser: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:01.859265" level="INFO">Reusing existing browser with id: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:01.860386" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:58:01.868675" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:58:01.868851" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:58:05.237262" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T13:58:01.855231" elapsed="3.382299"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:58:05.242453" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:58:05.238786" elapsed="0.003707"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:58:05.242764" elapsed="0.000374"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:58:05.237948" elapsed="0.005268"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:58:01.854723" elapsed="3.388537"/>
+</kw>
+<kw name=" Update and Verify for Company Name" owner="tasks">
+<kw name="Open Selected Invoice Number Page" owner="tasks">
+<kw name="View Invoice Number Details" owner="actions">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:58:10.245570" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:58:05.244621" elapsed="5.001092"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:58:20.414771" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-24T13:58:20.414908" level="INFO">See also file:///C:/Users/LIAW004/projects/Updated-Beufort-Project/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-24T13:58:54.142038" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</msg>
+<arg>xpath=//a[normalize-space(text())="${invoice_num}"]</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-04-24T13:58:10.245933" elapsed="43.920085">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath=//a[normalize-space(text())="${invoice_num}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-24T13:58:54.166199" elapsed="0.000125"/>
+</kw>
+<arg>${invoice_number}</arg>
+<status status="FAIL" start="2025-04-24T13:58:05.244191" elapsed="48.922260">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Verify Invoice Page is navigated" owner="actions">
+<arg>${invoice_number}</arg>
+<status status="NOT RUN" start="2025-04-24T13:58:54.166597" elapsed="0.000098"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:58:05.243966" elapsed="48.922804">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<arg>${company_name_field}</arg>
+<arg>${company_name_updated}</arg>
+<status status="NOT RUN" start="2025-04-24T13:58:54.166862" elapsed="0.000082"/>
+</kw>
+<kw name="Select Save Button" owner="actions">
+<status status="NOT RUN" start="2025-04-24T13:58:54.167037" elapsed="0.000072"/>
+</kw>
+<kw name="Verify Column is Contain Updated Information" owner="actions">
+<arg>${company_name_column}</arg>
+<arg>${invoice_number}</arg>
+<arg>${company_name_updated}</arg>
+<arg>Company Name</arg>
+<status status="NOT RUN" start="2025-04-24T13:58:54.167192" elapsed="0.000070"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:58:05.243660" elapsed="48.923673">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name=" Update and Verify for Type of Work" owner="tasks">
+<status status="NOT RUN" start="2025-04-24T13:58:54.167715" elapsed="0.000114"/>
+</kw>
+<kw name="Update and Verify for Amount" owner="tasks">
+<status status="NOT RUN" start="2025-04-24T13:58:54.168199" elapsed="0.000149"/>
+</kw>
+<kw name="Update and Verify for Description" owner="tasks">
+<status status="NOT RUN" start="2025-04-24T13:58:54.168610" elapsed="0.000113"/>
+</kw>
+<kw name="Update and Verify for Status" owner="tasks">
+<status status="NOT RUN" start="2025-04-24T13:58:54.169055" elapsed="0.000180"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Invoice ${invoice_number} has successfully been updated.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-24T13:58:54.169538" elapsed="0.000125"/>
+</kw>
+<msg time="2025-04-24T13:58:54.173046" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:58:54.189529" level="INFO">Switching context to context=dee07da5-7867-4fec-85bd-9ae69e485102 in CURRENT</msg>
+<msg time="2025-04-24T13:58:54.211277" level="INFO">Successfully changed active context: context=dee07da5-7867-4fec-85bd-9ae69e485102</msg>
+<msg time="2025-04-24T13:58:54.252360" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-24T13:58:01.850793" elapsed="52.319274">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</test>
+<status status="FAIL" start="2025-04-24T13:58:01.839694" elapsed="52.414023"/>
+</suite>
+<suite id="s1-s1-s1-s1-s3" name="03 Delete Invoice" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage\03_Delete_Invoice.robot">
+<test id="s1-s1-s1-s1-s3-t1" name="Delete Existing Invoice" line="9">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:58:54.282238" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:58:54.282736" level="INFO">Switching browser to browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:54.285743" level="INFO">Successfully changed active browser: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:54.285946" level="INFO">Reusing existing browser with id: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:58:54.287413" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:58:54.300401" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:58:54.300478" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:58:58.342235" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T13:58:54.281769" elapsed="4.060736"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:58:58.346116" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:58:58.343437" elapsed="0.002726"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:58:58.346344" elapsed="0.000414"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:58:58.342805" elapsed="0.004033"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:58:54.281358" elapsed="4.065527"/>
+</kw>
+<kw name="Open Selected Invoice Number Page" owner="tasks">
+<kw name="View Invoice Number Details" owner="actions">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:59:03.348790" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:58:58.347977" elapsed="5.001052"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:13.656745" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-24T13:59:13.657207" level="INFO">See also file:///C:/Users/LIAW004/projects/Updated-Beufort-Project/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-24T13:59:13.658185" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</msg>
+<arg>xpath=//a[normalize-space(text())="${invoice_num}"]</arg>
+<arg>attached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-04-24T13:59:03.349431" elapsed="10.313515">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath=//a[normalize-space(text())="${invoice_num}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-24T13:59:13.663477" elapsed="0.000406"/>
+</kw>
+<arg>${invoice_number}</arg>
+<status status="FAIL" start="2025-04-24T13:58:58.347658" elapsed="15.316582">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Verify Invoice Page is navigated" owner="actions">
+<arg>${invoice_number}</arg>
+<status status="NOT RUN" start="2025-04-24T13:59:13.664689" elapsed="0.000367"/>
+</kw>
+<status status="FAIL" start="2025-04-24T13:58:58.347275" elapsed="15.318050">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</kw>
+<kw name="Select Delete Button" owner="actions">
+<status status="NOT RUN" start="2025-04-24T13:59:13.665949" elapsed="0.000337"/>
+</kw>
+<kw name="Verify Invoice Deleted" owner="actions">
+<arg>${invoice_number}</arg>
+<status status="NOT RUN" start="2025-04-24T13:59:13.666774" elapsed="0.000302"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Invoice ${invoice_number} has been deleted.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-24T13:59:13.667509" elapsed="0.000264"/>
+</kw>
+<msg time="2025-04-24T13:59:13.674949" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:59:13.696330" level="INFO">Switching context to context=3016371b-1aa2-475c-bb54-9db530b9a021 in CURRENT</msg>
+<msg time="2025-04-24T13:59:13.709619" level="INFO">Successfully changed active context: context=3016371b-1aa2-475c-bb54-9db530b9a021</msg>
+<msg time="2025-04-24T13:59:13.762616" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-24T13:58:54.278469" elapsed="19.389810">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[normalize-space(text())="INV22808A64"]')
+</status>
+</test>
+<status status="FAIL" start="2025-04-24T13:58:54.260668" elapsed="19.504265"/>
+</suite>
+<suite id="s1-s1-s1-s1-s4" name="Multiple Add Invoice" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage\Multiple_Add_Invoice.robot">
+<test id="s1-s1-s1-s1-s4-t1" name="Create Invoice for INV10031" line="8">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:59:13.823857" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:13.825154" level="INFO">Switching browser to browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:13.829941" level="INFO">Successfully changed active browser: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:13.830137" level="INFO">Reusing existing browser with id: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:13.832694" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:59:13.853747" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:59:13.854043" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:59:17.105649" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T13:59:13.822375" elapsed="3.283943"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:17.114175" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.108160" elapsed="0.006137"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.114758" elapsed="0.000709"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:17.106901" elapsed="0.008774"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:13.821054" elapsed="3.294748"/>
+</kw>
+<kw name="Invoice Workflow">
+<kw name="Open Add Invoice Tab" owner="tasks">
+<kw name="Go to Add Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:17.121547" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/addInvoice"]'.</msg>
+<arg>${add_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.119711" elapsed="0.118831"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:17.119004" elapsed="0.119868"/>
+</kw>
+<kw name="Verify If Add Invoice Tab Is Open" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:17.246386" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/addInvoice</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.240592" elapsed="0.005906"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${add_invoice_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.246938" elapsed="0.000843"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:17.239294" elapsed="0.008690"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:17.118267" elapsed="0.129844"/>
+</kw>
+<kw name="Fill In Details" owner="tasks">
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:17.252012" level="INFO">Types the text 'INV10031' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:17.250800" elapsed="1.414118"/>
+</kw>
+<arg>${invoice_number_field}</arg>
+<arg>${applied_inv_num}</arg>
+<status status="PASS" start="2025-04-24T13:59:17.249848" elapsed="1.415320"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:18.667021" level="INFO">Types the text 'Acme Corp' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:18.666225" elapsed="0.059186"/>
+</kw>
+<arg>${company_name_field}</arg>
+<arg>${applied_company_name}</arg>
+<status status="PASS" start="2025-04-24T13:59:18.665425" elapsed="0.060278"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:18.727884" level="INFO">Types the text 'Development' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:18.727020" elapsed="0.062954"/>
+</kw>
+<arg>${type_of_work_field}</arg>
+<arg>${applied_type_of_work}</arg>
+<status status="PASS" start="2025-04-24T13:59:18.725977" elapsed="0.064278"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:18.792849" level="INFO">Types the text '5000' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:18.791861" elapsed="0.063756"/>
+</kw>
+<arg>${invoice_cost_field}</arg>
+<arg>${applied_cost}</arg>
+<status status="PASS" start="2025-04-24T13:59:18.790645" elapsed="0.065232"/>
+</kw>
+<kw name="Select Status" owner="actions">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-24T13:59:18.858667" level="INFO">Selects the option(s) Paid by attribute SelectAttribute.value from element css=select#selectStatus.</msg>
+<arg>${invoice_status_dropdown}</arg>
+<arg>value</arg>
+<arg>${status}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:18.857330" elapsed="0.084387"/>
+</kw>
+<arg>${applied_status}</arg>
+<status status="PASS" start="2025-04-24T13:59:18.856259" elapsed="0.086177"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:18.945915" level="INFO">Types the text '2023-12-31' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:18.944091" elapsed="0.124379"/>
+</kw>
+<arg>${invoice_due_date_field}</arg>
+<arg>${applied_due_date}</arg>
+<status status="PASS" start="2025-04-24T13:59:18.942881" elapsed="0.126040"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:19.073284" level="INFO">Types the text 'Initial payment' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.071656" elapsed="0.121242"/>
+</kw>
+<arg>${invoice_comment_field}</arg>
+<arg>${applied_comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:19.069468" elapsed="0.123736"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:19.194413" level="INFO">All data filled for INV10031</msg>
+<arg>All data filled for ${applied_inv_num}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.193564" elapsed="0.000994"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:17.248495" elapsed="1.946258"/>
+</kw>
+<kw name="Select Create Button" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:19.197114" level="INFO">Clicks the element 'xpath=//button[text()='Create']'.</msg>
+<arg>${create_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.196020" elapsed="0.065711"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2025-04-24T13:59:19.263977" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2025-04-24T13:59:19.275863" level="INFO">Load state load got in 10000</msg>
+<arg>load</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.262224" elapsed="0.014014"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:19.195161" elapsed="0.081369"/>
+</kw>
+<kw name="Go to Main Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:19.279099" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/tables"]'.</msg>
+<arg>${all_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.277944" elapsed="0.090786"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.370350" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:59:19.369083" elapsed="3.001523"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:19.277009" elapsed="3.093805"/>
+</kw>
+<kw name="Verify Data is Added" owner="tasks">
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.383308" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.373554" elapsed="0.009927"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.384279" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'company_name')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.383698" elapsed="0.000673"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.405793" level="INFO">Text: 'Acme Corp'</msg>
+<msg time="2025-04-24T13:59:22.405949" level="INFO">${target_value} = Acme Corp</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.384682" elapsed="0.021296"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.406639" level="INFO">Updated Company Name: Acme Corp</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.406167" elapsed="0.000544"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.406888" elapsed="0.000404"/>
+</kw>
+<arg>${company_name_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${comp_name}</arg>
+<arg>Company Name</arg>
+<status status="PASS" start="2025-04-24T13:59:22.372525" elapsed="0.035046"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.417270" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.408516" elapsed="0.008929"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.418243" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'type_of_work')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.417645" elapsed="0.000661"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.434716" level="INFO">Text: 'Development'</msg>
+<msg time="2025-04-24T13:59:22.435018" level="INFO">${target_value} = Development</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.418559" elapsed="0.016600"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.436465" level="INFO">Updated Type Of Work: Development</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.435679" elapsed="0.000972"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.437200" elapsed="0.001005"/>
+</kw>
+<arg>${type_of_work_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${work_type}</arg>
+<arg>Type Of Work</arg>
+<status status="PASS" start="2025-04-24T13:59:22.407816" elapsed="0.030661"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.451756" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.440481" elapsed="0.011449"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.452643" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'price')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.452128" elapsed="0.000565"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.470828" level="INFO">Text: '5000'</msg>
+<msg time="2025-04-24T13:59:22.470972" level="INFO">${target_value} = 5000</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.452888" elapsed="0.018113"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.471789" level="INFO">Updated Amount: 5000</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.471177" elapsed="0.000711"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.472117" elapsed="0.000454"/>
+</kw>
+<arg>${amount_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${amnt_cost}</arg>
+<arg>Amount</arg>
+<status status="PASS" start="2025-04-24T13:59:22.439050" elapsed="0.033658"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.480561" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.473695" elapsed="0.007026"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.481524" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'status')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.480907" elapsed="0.000695"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.498025" level="INFO">Text: 'Paid'</msg>
+<msg time="2025-04-24T13:59:22.498283" level="INFO">${target_value} = Paid</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.481931" elapsed="0.016411"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.499321" level="INFO">Updated Status: Paid</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.498662" elapsed="0.000776"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.499730" elapsed="0.000612"/>
+</kw>
+<arg>${status_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${stat_name}</arg>
+<arg>Status</arg>
+<status status="PASS" start="2025-04-24T13:59:22.472965" elapsed="0.027572"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.511454" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.501942" elapsed="0.009739"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.512671" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'due_date')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.511987" elapsed="0.000744"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.529078" level="INFO">Text: '2023-12-31'</msg>
+<msg time="2025-04-24T13:59:22.529229" level="INFO">${target_value} = 2023-12-31</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.513029" elapsed="0.016228"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.529838" level="INFO">Updated Due Date: 2023-12-31</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.529433" elapsed="0.000456"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.530021" elapsed="0.000284"/>
+</kw>
+<arg>${due_date_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${due_date}</arg>
+<arg>Due Date</arg>
+<status status="PASS" start="2025-04-24T13:59:22.500911" elapsed="0.029487"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:22.542402" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10031"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.532023" elapsed="0.010548"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.543515" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10031"]]//td[contains(@class, 'comment')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.542759" elapsed="0.000842"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:22.565238" level="INFO">Text: 'Initial payment'</msg>
+<msg time="2025-04-24T13:59:22.565415" level="INFO">${target_value} = Initial payment</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.543932" elapsed="0.021520"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:22.566211" level="INFO">Updated Description: Initial payment</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.565679" elapsed="0.000614"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.566502" elapsed="0.000428"/>
+</kw>
+<arg>${description_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${desc_name}</arg>
+<arg>Description</arg>
+<status status="PASS" start="2025-04-24T13:59:22.530903" elapsed="0.036146"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:22.371113" elapsed="0.196043"/>
+</kw>
+<arg>INV10031</arg>
+<arg>Acme Corp</arg>
+<arg>Development</arg>
+<arg>5000</arg>
+<arg>2023-12-31</arg>
+<arg>Initial payment</arg>
+<arg>Paid</arg>
+<status status="PASS" start="2025-04-24T13:59:17.117170" elapsed="5.450092"/>
+</kw>
+<msg time="2025-04-24T13:59:22.570764" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:59:22.589343" level="INFO">Switching context to context=f4083f8b-3afd-48d8-b347-e578bf634681 in CURRENT</msg>
+<msg time="2025-04-24T13:59:22.599667" level="INFO">Successfully changed active context: context=f4083f8b-3afd-48d8-b347-e578bf634681</msg>
+<msg time="2025-04-24T13:59:22.630841" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-04-24T13:59:13.813493" elapsed="8.754139"/>
+</test>
+<test id="s1-s1-s1-s1-s4-t2" name="Create Invoice for INV10032" line="11">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:59:22.637637" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:22.638132" level="INFO">Switching browser to browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:22.641761" level="INFO">Successfully changed active browser: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:22.642039" level="INFO">Reusing existing browser with id: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:22.645193" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:59:22.658684" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:59:22.658789" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:59:25.307802" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T13:59:22.636583" elapsed="2.671510"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:25.312840" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.309090" elapsed="0.003823"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.313183" elapsed="0.000752"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:25.308453" elapsed="0.005617"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:22.635895" elapsed="2.678261"/>
+</kw>
+<kw name="Invoice Workflow">
+<kw name="Open Add Invoice Tab" owner="tasks">
+<kw name="Go to Add Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:25.317848" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/addInvoice"]'.</msg>
+<arg>${add_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.317301" elapsed="0.086793"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:25.316702" elapsed="0.087768"/>
+</kw>
+<kw name="Verify If Add Invoice Tab Is Open" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:25.411479" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/addInvoice</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.406323" elapsed="0.005216"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${add_invoice_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.411935" elapsed="0.000708"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:25.405157" elapsed="0.007632"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:25.315960" elapsed="0.096924"/>
+</kw>
+<kw name="Fill In Details" owner="tasks">
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.416740" level="INFO">Types the text 'INV10032' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.415436" elapsed="0.265077"/>
+</kw>
+<arg>${invoice_number_field}</arg>
+<arg>${applied_inv_num}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.414522" elapsed="0.266227"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.683441" level="INFO">Types the text 'Acme Corp' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.682178" elapsed="0.050815"/>
+</kw>
+<arg>${company_name_field}</arg>
+<arg>${applied_company_name}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.681078" elapsed="0.052139"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.735996" level="INFO">Types the text 'Development' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.734675" elapsed="0.052170"/>
+</kw>
+<arg>${type_of_work_field}</arg>
+<arg>${applied_type_of_work}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.733538" elapsed="0.053658"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.789559" level="INFO">Types the text '5000' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.788522" elapsed="0.027718"/>
+</kw>
+<arg>${invoice_cost_field}</arg>
+<arg>${applied_cost}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.787529" elapsed="0.028866"/>
+</kw>
+<kw name="Select Status" owner="actions">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-24T13:59:25.818223" level="INFO">Selects the option(s) Paid by attribute SelectAttribute.value from element css=select#selectStatus.</msg>
+<arg>${invoice_status_dropdown}</arg>
+<arg>value</arg>
+<arg>${status}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.817284" elapsed="0.035533"/>
+</kw>
+<arg>${applied_status}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.816657" elapsed="0.036320"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.855139" level="INFO">Types the text '2023-12-31' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.854143" elapsed="0.047566"/>
+</kw>
+<arg>${invoice_due_date_field}</arg>
+<arg>${applied_due_date}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.853177" elapsed="0.048689"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:25.904523" level="INFO">Types the text 'Initial payment' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.903073" elapsed="0.057206"/>
+</kw>
+<arg>${invoice_comment_field}</arg>
+<arg>${applied_comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.902092" elapsed="0.058346"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:25.961067" level="INFO">All data filled for INV10032</msg>
+<arg>All data filled for ${applied_inv_num}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.960613" elapsed="0.000522"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:25.413193" elapsed="0.548034"/>
+</kw>
+<kw name="Select Create Button" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:25.963003" level="INFO">Clicks the element 'xpath=//button[text()='Create']'.</msg>
+<arg>${create_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:25.962068" elapsed="0.038537"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2025-04-24T13:59:26.002531" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2025-04-24T13:59:26.007671" level="INFO">Load state load got in 10000</msg>
+<arg>load</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2025-04-24T13:59:26.001011" elapsed="0.006848"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:25.961424" elapsed="0.046596"/>
+</kw>
+<kw name="Go to Main Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:26.010012" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/tables"]'.</msg>
+<arg>${all_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:26.009044" elapsed="0.058684"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.068966" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:59:26.067956" elapsed="3.001113"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:26.008290" elapsed="3.060861"/>
+</kw>
+<kw name="Verify Data is Added" owner="tasks">
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.076944" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.070109" elapsed="0.006989"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.077685" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'company_name')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.077273" elapsed="0.000439"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.093555" level="INFO">Text: 'Acme Corp'</msg>
+<msg time="2025-04-24T13:59:29.093686" level="INFO">${target_value} = Acme Corp</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.077903" elapsed="0.015806"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.094235" level="INFO">Updated Company Name: Acme Corp</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.093870" elapsed="0.000409"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.094394" elapsed="0.000267"/>
+</kw>
+<arg>${company_name_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${comp_name}</arg>
+<arg>Company Name</arg>
+<status status="PASS" start="2025-04-24T13:59:29.069816" elapsed="0.024909"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.100897" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.095242" elapsed="0.005800"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.101562" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'type_of_work')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.101195" elapsed="0.000396"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.115874" level="INFO">Text: 'Development'</msg>
+<msg time="2025-04-24T13:59:29.115999" level="INFO">${target_value} = Development</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.101705" elapsed="0.014315"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.116537" level="INFO">Updated Type Of Work: Development</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.116185" elapsed="0.000397"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.116693" elapsed="0.000211"/>
+</kw>
+<arg>${type_of_work_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${work_type}</arg>
+<arg>Type Of Work</arg>
+<status status="PASS" start="2025-04-24T13:59:29.094855" elapsed="0.022111"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.123396" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.117422" elapsed="0.006134"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.124100" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'price')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.123725" elapsed="0.000403"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.136760" level="INFO">Text: '5000'</msg>
+<msg time="2025-04-24T13:59:29.136924" level="INFO">${target_value} = 5000</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.124243" elapsed="0.012705"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.137485" level="INFO">Updated Amount: 5000</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.137133" elapsed="0.000400"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.137639" elapsed="0.000214"/>
+</kw>
+<arg>${amount_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${amnt_cost}</arg>
+<arg>Amount</arg>
+<status status="PASS" start="2025-04-24T13:59:29.117089" elapsed="0.020832"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.143621" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.138370" elapsed="0.005397"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.144309" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'status')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.143928" elapsed="0.000408"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.156726" level="INFO">Text: 'Paid'</msg>
+<msg time="2025-04-24T13:59:29.156856" level="INFO">${target_value} = Paid</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.144452" elapsed="0.012427"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.157400" level="INFO">Updated Status: Paid</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.157035" elapsed="0.000410"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.157558" elapsed="0.000206"/>
+</kw>
+<arg>${status_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${stat_name}</arg>
+<arg>Status</arg>
+<status status="PASS" start="2025-04-24T13:59:29.138043" elapsed="0.019780"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.162896" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.158346" elapsed="0.004697"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.163602" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'due_date')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.163202" elapsed="0.000430"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.174618" level="INFO">Text: '2023-12-31'</msg>
+<msg time="2025-04-24T13:59:29.174747" level="INFO">${target_value} = 2023-12-31</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.163753" elapsed="0.011016"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.175277" level="INFO">Updated Due Date: 2023-12-31</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.174921" elapsed="0.000399"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.175429" elapsed="0.000203"/>
+</kw>
+<arg>${due_date_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${due_date}</arg>
+<arg>Due Date</arg>
+<status status="PASS" start="2025-04-24T13:59:29.157998" elapsed="0.017695"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:29.180849" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10032"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.176163" elapsed="0.004844"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.181564" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10032"]]//td[contains(@class, 'comment')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.181192" elapsed="0.000397"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:29.193359" level="INFO">Text: 'Initial payment'</msg>
+<msg time="2025-04-24T13:59:29.193489" level="INFO">${target_value} = Initial payment</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.181704" elapsed="0.011808"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:29.194005" level="INFO">Updated Description: Initial payment</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.193662" elapsed="0.000386"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.194159" elapsed="0.000206"/>
+</kw>
+<arg>${description_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${desc_name}</arg>
+<arg>Description</arg>
+<status status="PASS" start="2025-04-24T13:59:29.175816" elapsed="0.018609"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:29.069289" elapsed="0.125184"/>
+</kw>
+<arg>INV10032</arg>
+<arg>Acme Corp</arg>
+<arg>Development</arg>
+<arg>5000</arg>
+<arg>2023-12-31</arg>
+<arg>Initial payment</arg>
+<arg>Paid</arg>
+<status status="PASS" start="2025-04-24T13:59:25.314867" elapsed="3.879656"/>
+</kw>
+<msg time="2025-04-24T13:59:29.196770" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:59:29.206370" level="INFO">Switching context to context=6a7362aa-502e-463c-b450-2abcb1d93a1e in CURRENT</msg>
+<msg time="2025-04-24T13:59:29.212405" level="INFO">Successfully changed active context: context=6a7362aa-502e-463c-b450-2abcb1d93a1e</msg>
+<msg time="2025-04-24T13:59:29.242079" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-04-24T13:59:22.632049" elapsed="6.562765"/>
+</test>
+<test id="s1-s1-s1-s1-s4-t3" name="Create Invoice for INV10033" line="14">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T13:59:29.248292" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:29.248825" level="INFO">Switching browser to browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:29.251127" level="INFO">Successfully changed active browser: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:29.251244" level="INFO">Reusing existing browser with id: browser=e414b385-b10a-4a6e-81e4-5379cea3e139</msg>
+<msg time="2025-04-24T13:59:29.252317" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T13:59:29.261386" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T13:59:29.261469" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T13:59:34.305287" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T13:59:29.247785" elapsed="5.057783"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:34.309044" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.306266" elapsed="0.002826"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.309266" elapsed="0.000404"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.305809" elapsed="0.003935"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:29.246926" elapsed="5.062912"/>
+</kw>
+<kw name="Invoice Workflow">
+<kw name="Open Add Invoice Tab" owner="tasks">
+<kw name="Go to Add Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:34.311673" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/addInvoice"]'.</msg>
+<arg>${add_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.311260" elapsed="0.067229"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.311008" elapsed="0.067607"/>
+</kw>
+<kw name="Verify If Add Invoice Tab Is Open" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T13:59:34.382630" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/addInvoice</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.379417" elapsed="0.003259"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${add_invoice_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.382841" elapsed="0.000436"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.378781" elapsed="0.004581"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.310753" elapsed="0.072659"/>
+</kw>
+<kw name="Fill In Details" owner="tasks">
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.384916" level="INFO">Types the text 'INV10033' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.384453" elapsed="0.256032"/>
+</kw>
+<arg>${invoice_number_field}</arg>
+<arg>${applied_inv_num}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.384093" elapsed="0.256535"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.641873" level="INFO">Types the text 'Initech' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.641359" elapsed="0.027167"/>
+</kw>
+<arg>${company_name_field}</arg>
+<arg>${applied_company_name}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.640816" elapsed="0.027838"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.669851" level="INFO">Types the text 'Development' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.669345" elapsed="0.038287"/>
+</kw>
+<arg>${type_of_work_field}</arg>
+<arg>${applied_type_of_work}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.668822" elapsed="0.038944"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.709333" level="INFO">Types the text '3200' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.708579" elapsed="0.023635"/>
+</kw>
+<arg>${invoice_cost_field}</arg>
+<arg>${applied_cost}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.707960" elapsed="0.024391"/>
+</kw>
+<kw name="Select Status" owner="actions">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-24T13:59:34.733704" level="INFO">Selects the option(s) Draft by attribute SelectAttribute.value from element css=select#selectStatus.</msg>
+<arg>${invoice_status_dropdown}</arg>
+<arg>value</arg>
+<arg>${status}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.733124" elapsed="0.027200"/>
+</kw>
+<arg>${applied_status}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.732534" elapsed="0.027930"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.761720" level="INFO">Types the text '2025-06-15' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.761180" elapsed="0.038635"/>
+</kw>
+<arg>${invoice_due_date_field}</arg>
+<arg>${applied_due_date}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.760632" elapsed="0.039320"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T13:59:34.801377" level="INFO">Types the text 'Backend overhaul' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.800692" elapsed="0.048879"/>
+</kw>
+<arg>${invoice_comment_field}</arg>
+<arg>${applied_comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.800134" elapsed="0.049576"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:34.850264" level="INFO">All data filled for INV10033</msg>
+<arg>All data filled for ${applied_inv_num}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.849867" elapsed="0.000457"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:34.383574" elapsed="0.466829"/>
+</kw>
+<kw name="Select Create Button" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:34.851441" level="INFO">Clicks the element 'xpath=//button[text()='Create']'.</msg>
+<arg>${create_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.850929" elapsed="0.048825"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2025-04-24T13:59:34.900679" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2025-04-24T13:59:34.903398" level="INFO">Load state load got in 10000</msg>
+<arg>load</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.899971" elapsed="0.003589"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.850572" elapsed="0.053106"/>
+</kw>
+<kw name="Go to Main Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T13:59:34.905059" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/tables"]'.</msg>
+<arg>${all_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.904469" elapsed="0.055992"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T13:59:37.961491" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T13:59:34.960676" elapsed="3.000967"/>
+</kw>
+<status status="PASS" start="2025-04-24T13:59:34.903860" elapsed="3.058008"/>
+</kw>
+<kw name="Verify Data is Added" owner="tasks">
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:37.969524" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.963301" elapsed="0.006390"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:37.970314" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'company_name')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.969873" elapsed="0.000475"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:37.984792" level="INFO">Text: 'Initech'</msg>
+<msg time="2025-04-24T13:59:37.985038" level="INFO">${target_value} = Initech</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.970492" elapsed="0.014605"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:37.985838" level="INFO">Updated Company Name: Initech</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.985335" elapsed="0.000567"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.986063" elapsed="0.000296"/>
+</kw>
+<arg>${company_name_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${comp_name}</arg>
+<arg>Company Name</arg>
+<status status="PASS" start="2025-04-24T13:59:37.962846" elapsed="0.023594"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:37.993664" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.987102" elapsed="0.006741"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:37.994557" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'type_of_work')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.994041" elapsed="0.000558"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:38.008903" level="INFO">Text: 'Development'</msg>
+<msg time="2025-04-24T13:59:38.009125" level="INFO">${target_value} = Development</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:37.994757" elapsed="0.014418"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.009950" level="INFO">Updated Type Of Work: Development</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.009433" elapsed="0.000580"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.010216" elapsed="0.000354"/>
+</kw>
+<arg>${type_of_work_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${work_type}</arg>
+<arg>Type Of Work</arg>
+<status status="PASS" start="2025-04-24T13:59:37.986600" elapsed="0.024054"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:38.018460" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.011316" elapsed="0.007331"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.019354" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'price')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.018845" elapsed="0.000554"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:38.038406" level="INFO">Text: '3200'</msg>
+<msg time="2025-04-24T13:59:38.038649" level="INFO">${target_value} = 3200</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.019623" elapsed="0.019082"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.039617" level="INFO">Updated Amount: 3200</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.039002" elapsed="0.000707"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.039934" elapsed="0.000445"/>
+</kw>
+<arg>${amount_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${amnt_cost}</arg>
+<arg>Amount</arg>
+<status status="PASS" start="2025-04-24T13:59:38.010818" elapsed="0.029686"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:38.047254" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.041473" elapsed="0.005965"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.048122" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'status')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.047641" elapsed="0.000516"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:38.066096" level="INFO">Text: 'Draft'</msg>
+<msg time="2025-04-24T13:59:38.066350" level="INFO">${target_value} = Draft</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.048307" elapsed="0.018191"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.067503" level="INFO">Updated Status: Draft</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.066833" elapsed="0.000778"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.067882" elapsed="0.000410"/>
+</kw>
+<arg>${status_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${stat_name}</arg>
+<arg>Status</arg>
+<status status="PASS" start="2025-04-24T13:59:38.040761" elapsed="0.027634"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:38.077850" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.069544" elapsed="0.008603"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.079249" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'due_date')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.078477" elapsed="0.000836"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:38.100179" level="INFO">Text: '2025-06-15'</msg>
+<msg time="2025-04-24T13:59:38.100486" level="INFO">${target_value} = 2025-06-15</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.079577" elapsed="0.021081"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.101791" level="INFO">Updated Due Date: 2025-06-15</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.101032" elapsed="0.000867"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.102165" elapsed="0.000695"/>
+</kw>
+<arg>${due_date_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${due_date}</arg>
+<arg>Due Date</arg>
+<status status="PASS" start="2025-04-24T13:59:38.068619" elapsed="0.034485"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T13:59:38.118060" level="INFO">Waited for Element with selector xpath=//td[@id="invoiceNo_INV10033"] at state visible</msg>
+<arg>xpath=//td[@id="invoiceNo_${applied_inv_num}"]</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.104923" elapsed="0.013419"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.119409" level="INFO">${xpath} = //tr[td[@id="invoiceNo_INV10033"]]//td[contains(@class, 'comment')]</msg>
+<var>${xpath}</var>
+<arg>//tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.118681" elapsed="0.000792"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-24T13:59:38.141356" level="INFO">Text: 'Backend overhaul'</msg>
+<msg time="2025-04-24T13:59:38.141533" level="INFO">${target_value} = Backend overhaul</msg>
+<var>${target_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.119700" elapsed="0.021867"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T13:59:38.142271" level="INFO">Updated Description: Backend overhaul</msg>
+<arg>Updated ${Content}: ${target_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.141800" elapsed="0.000536"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${target_value}</arg>
+<arg>${new_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-24T13:59:38.142505" elapsed="0.000336"/>
+</kw>
+<arg>${description_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${desc_name}</arg>
+<arg>Description</arg>
+<status status="PASS" start="2025-04-24T13:59:38.103508" elapsed="0.039436"/>
+</kw>
+<arg>${invoice_num}</arg>
+<arg>${company_name}</arg>
+<arg>${type_of_work}</arg>
+<arg>${cost}</arg>
+<arg>${status}</arg>
+<arg>${due_date}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-04-24T13:59:37.962127" elapsed="0.180930"/>
+</kw>
+<arg>INV10033</arg>
+<arg>Initech</arg>
+<arg>Development</arg>
+<arg>3200</arg>
+<arg>2025-06-15</arg>
+<arg>Backend overhaul</arg>
+<arg>Draft</arg>
+<status status="PASS" start="2025-04-24T13:59:34.310340" elapsed="3.832853"/>
+</kw>
+<msg time="2025-04-24T13:59:38.147143" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-24T13:59:38.162477" level="INFO">Switching context to context=50680824-8478-40e8-b4f1-375f72113719 in CURRENT</msg>
+<msg time="2025-04-24T13:59:38.172609" level="INFO">Successfully changed active context: context=50680824-8478-40e8-b4f1-375f72113719</msg>
+<msg time="2025-04-24T13:59:38.228743" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-04-24T13:59:29.243148" elapsed="8.900343"/>
+</test>
+<status status="PASS" start="2025-04-24T13:59:13.776764" elapsed="24.455869"/>
+</suite>
+<status status="FAIL" start="2025-04-24T13:57:49.555694" elapsed="108.700091"/>
+</suite>
+<status status="FAIL" start="2025-04-24T13:57:49.554608" elapsed="108.704928"/>
+</suite>
+<status status="FAIL" start="2025-04-24T13:57:49.553372" elapsed="108.724991"/>
+</suite>
+<status status="FAIL" start="2025-04-24T13:57:49.524809" elapsed="108.756632"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Updated-Beufort-Project" id="s1" pass="3" fail="3" skip="0">Updated-Beufort-Project</stat>
+<stat name="Tests" id="s1-s1" pass="3" fail="3" skip="0">Updated-Beufort-Project.Tests</stat>
+<stat name="Test GUIs" id="s1-s1-s1" pass="3" fail="3" skip="0">Updated-Beufort-Project.Tests.Test GUIs</stat>
+<stat name="Homepage" id="s1-s1-s1-s1" pass="3" fail="3" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage</stat>
+<stat name="01 Add Invoice" id="s1-s1-s1-s1-s1" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage.01 Add Invoice</stat>
+<stat name="02 Edit Invoice" id="s1-s1-s1-s1-s2" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage.02 Edit Invoice</stat>
+<stat name="03 Delete Invoice" id="s1-s1-s1-s1-s3" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage.03 Delete Invoice</stat>
+<stat name="Multiple Add Invoice" id="s1-s1-s1-s1-s4" pass="3" fail="0" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage.Multiple Add Invoice</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-24T13:57:49.731147" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:58:01.855774" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:58:54.282238" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:13.823857" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:22.637637" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T13:59:29.248292" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-24T17:38:29.584953" rpa="false" schemaversion="5">
+<suite id="s1" name="Updated-Beufort-Project" source="C:\Users\LIAW004\projects\Updated-Beufort-Project">
+<suite id="s1-s1" name="Tests" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests">
+<suite id="s1-s1-s1" name="Test GUIs" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs">
+<suite id="s1-s1-s1-s1" name="Homepage" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage">
+<suite id="s1-s1-s1-s1-s1" name="01 Add Invoice" source="C:\Users\LIAW004\projects\Updated-Beufort-Project\Tests\Test GUIs\homepage\01_Add_Invoice.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Add New Invoice" line="7">
+<kw name="Open Browser" owner="actions" type="SETUP">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-04-24T17:38:29.818135" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-04-24T17:38:29.819280" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\results\\browser\\traces\\temp\\7a09972c-f6bf-46b3-9586-43e83ee1fb53"}</msg>
+<msg time="2025-04-24T17:38:29.847827" level="INFO">Starting Browser process c:\Users\LIAW004\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 62541</msg>
+<msg time="2025-04-24T17:38:29.848214" level="INFO">Node startup parameters: ['node', 'c:\\Users\\LIAW004\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62541']</msg>
+<msg time="2025-04-24T17:38:31.448112" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\LIAW004\\projects\\Updated-Beufort-Project\\results\\browser\\traces\\temp\\7a09972c-f6bf-46b3-9586-43e83ee1fb53"}</msg>
+<msg time="2025-04-24T17:38:31.451099" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-04-24T17:38:31.480498" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-24T17:38:31.481007" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2025-04-24T17:38:34.886534" level="INFO">Successfully initialized new page object and opened url: http://inv.beaufortfairmont.com/#/</msg>
+<arg>${main_page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-04-24T17:38:29.817447" elapsed="5.070191"/>
+</kw>
+<kw name="Verify If is navigated to main page" owner="actions">
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-24T17:38:34.896273" level="INFO">${current_url} = http://inv.beaufortfairmont.com/#/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-24T17:38:34.890130" elapsed="0.006440"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${main_page_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-24T17:38:34.897233" elapsed="0.001593"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:34.888491" elapsed="0.010690"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:29.816361" elapsed="5.083101"/>
+</kw>
+<kw name="Open Add Invoice Tab" owner="tasks">
+<kw name="Go to Add Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T17:38:34.902678" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/addInvoice"]'.</msg>
+<arg>${add_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:34.901799" elapsed="0.146835"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:34.901065" elapsed="0.147915"/>
+</kw>
+<kw name="Verify If Add Invoice Tab Is Open" owner="actions">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T17:38:35.284231" level="INFO">Waited for Element with selector css=input[name="invoice"] at state visible</msg>
+<arg>${invoice_number_field}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.050121" elapsed="0.234681"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T17:38:35.301137" level="INFO">Waited for Element with selector css=input[name="dueDate"] at state visible</msg>
+<arg>${invoice_due_date_field}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.285317" elapsed="0.016472"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:35.049285" elapsed="0.252767"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:34.900176" elapsed="0.402061"/>
+</kw>
+<kw name="Fill In Details" owner="tasks">
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:35.307232" level="INFO">Types the text 'INV0B151FC8' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.306049" elapsed="0.126432"/>
+</kw>
+<arg>${invoice_number_field}</arg>
+<arg>${applied_inv_num}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.304732" elapsed="0.128086"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:35.435535" level="INFO">Types the text 'Skyline Architects' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.434234" elapsed="0.156800"/>
+</kw>
+<arg>${company_name_field}</arg>
+<arg>${applied_company_name}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.433192" elapsed="0.158208"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:35.594016" level="INFO">Types the text 'Structural Engineering' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.592882" elapsed="0.187114"/>
+</kw>
+<arg>${type_of_work_field}</arg>
+<arg>${applied_type_of_work}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.591753" elapsed="0.188775"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:35.784670" level="INFO">Types the text '4500.5' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.782888" elapsed="0.081659"/>
+</kw>
+<arg>${invoice_cost_field}</arg>
+<arg>${applied_cost}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.781102" elapsed="0.084119"/>
+</kw>
+<kw name="Select Status" owner="actions">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-04-24T17:38:35.868191" level="INFO">Selects the option(s) Paid by attribute SelectAttribute.value from element css=select#selectStatus.</msg>
+<arg>${invoice_status_dropdown}</arg>
+<arg>value</arg>
+<arg>${status}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.866931" elapsed="0.081083"/>
+</kw>
+<arg>${applied_status}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.865809" elapsed="0.082856"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:35.955226" level="INFO">Types the text '2025-05-01' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:35.952622" elapsed="0.133215"/>
+</kw>
+<arg>${invoice_due_date_field}</arg>
+<arg>${applied_due_date}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.949659" elapsed="0.136765"/>
+</kw>
+<kw name="Input Text Into Field" owner="actions">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-24T17:38:36.091782" level="INFO">Types the text 'Blueprint design phase 1' in the given field.</msg>
+<arg>${field_selector}</arg>
+<arg>${text_value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.089067" elapsed="0.263895"/>
+</kw>
+<arg>${invoice_comment_field}</arg>
+<arg>${applied_comment}</arg>
+<status status="PASS" start="2025-04-24T17:38:36.087031" elapsed="0.266551"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-24T17:38:36.357117" level="INFO">All data filled for INV0B151FC8</msg>
+<arg>All data filled for ${applied_inv_num}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.354439" elapsed="0.003794"/>
+</kw>
+<arg>${invoice_number}</arg>
+<arg>${invoice_company_name}</arg>
+<arg>${invoice_type_of_work}</arg>
+<arg>${invoice_cost}</arg>
+<arg>${invoice_status}</arg>
+<arg>${invoice_due_date}</arg>
+<arg>${invoice_comment}</arg>
+<status status="PASS" start="2025-04-24T17:38:35.302823" elapsed="1.055914"/>
+</kw>
+<kw name="Select Create Button" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T17:38:36.363637" level="INFO">Clicks the element 'xpath=//button[text()='Create']'.</msg>
+<arg>${create_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.361627" elapsed="0.077760"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2025-04-24T17:38:36.442502" level="INFO">Waiting page load to state to receive load in 10000.0</msg>
+<msg time="2025-04-24T17:38:36.456063" level="INFO">Load state load got in 10000</msg>
+<arg>load</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.440121" elapsed="0.017032"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:36.359956" elapsed="0.098061"/>
+</kw>
+<kw name="Go to Main Invoice Tab" owner="actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-04-24T17:38:36.467200" level="INFO">Clicks the element 'css=li.sidebar-list &gt; a[href="#/tables"]'.</msg>
+<arg>${all_invoice_tab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.465094" elapsed="0.089865"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T17:38:39.557387" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T17:38:36.555720" elapsed="3.002188"/>
+</kw>
+<status status="PASS" start="2025-04-24T17:38:36.463395" elapsed="3.094824"/>
+</kw>
+<kw name="Verify Data is Added" owner="tasks">
+<kw name="Verify Column is Contain New Information" owner="actions">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-24T17:38:39.563750" level="INFO">${xpath} = //tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]</msg>
+<var>${xpath}</var>
+<arg>page.column_text_in_invoice_row.format("${applied_inv_num}", "${column_name}")</arg>
+<arg>modules=page</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-24T17:38:39.562438" elapsed="0.001929"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-24T17:39:09.693897" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-24T17:39:09.694288" level="INFO">See also file:///C:/Users/LIAW004/projects/Updated-Beufort-Project/results/playwright-log-1745487509764030200.txt for additional details.</msg>
+<msg time="2025-04-25T08:59:39.942523" level="FAIL">Error: locator.waitFor: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]' is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5716:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:5930:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:5917:30)
+    at eval (eval at evaluate (:234:30), &lt;anonymous&gt;:6:35)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:236:17)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+Call log:
+  - waiting for locator('//tr[td[@id=\'invoiceNo_INV0B151FC8\']]//td[contains(@class, \'@class, \'company_name\'\')]') to be visible
+</msg>
+<arg>${xpath}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-04-24T17:38:39.564829" elapsed="55260.467885">Error: locator.waitFor: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]' is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5716:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:5930:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:5917:30)
+    at eval (eval at evaluate (:234:30), &lt;anonymous&gt;:6:35)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:236:17)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+Call log:
+  - waiting for locator('//tr[td[@id=\'invoiceNo_INV0B151FC8\']]//td[contains(@class, \'@class, \'company_name\'\')]') to be visible
+</status>
+</kw>
+<kw name="Get Text" owner="Browser">
+<var>${actual_value}</var>
+<arg>${xpath}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-25T08:59:40.032959" elapsed="0.000236"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Updated ${content_label}: ${actual_value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-25T08:59:40.033350" elapsed="0.000150"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-04-25T08:59:40.033611" elapsed="0.000705"/>
+</kw>
+<arg>${company_name_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${comp_name}</arg>
+<arg>Company Name</arg>
+<status status="FAIL" start="2025-04-24T17:38:39.561088" elapsed="55260.473421">Error: locator.waitFor: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]' is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5716:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:5930:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:5917:30)
+    at eval (eval at evaluate (:234:30), &lt;anonymous&gt;:6:35)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:236:17)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+Call log:
+  - waiting for locator('//tr[td[@id=\'invoiceNo_INV0B151FC8\']]//td[contains(@class, \'@class, \'company_name\'\')]') to be visible
+</status>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<arg>${type_of_work_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${work_type}</arg>
+<arg>Type Of Work</arg>
+<status status="NOT RUN" start="2025-04-25T08:59:40.034696" elapsed="0.000214"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<arg>${amount_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${amnt_cost}</arg>
+<arg>Amount</arg>
+<status status="NOT RUN" start="2025-04-25T08:59:40.035053" elapsed="0.000138"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<arg>${status_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${stat_name}</arg>
+<arg>Status</arg>
+<status status="NOT RUN" start="2025-04-25T08:59:40.035321" elapsed="0.000133"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<arg>${due_date_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${due_date}</arg>
+<arg>Due Date</arg>
+<status status="NOT RUN" start="2025-04-25T08:59:40.035587" elapsed="0.000132"/>
+</kw>
+<kw name="Verify Column is Contain New Information" owner="actions">
+<arg>${description_column}</arg>
+<arg>${invoice_num}</arg>
+<arg>${desc_name}</arg>
+<arg>Description</arg>
+<status status="NOT RUN" start="2025-04-25T08:59:40.035837" elapsed="0.000129"/>
+</kw>
+<arg>${invoice_number}</arg>
+<arg>${invoice_company_name}</arg>
+<arg>${invoice_type_of_work}</arg>
+<arg>${invoice_cost}</arg>
+<arg>${invoice_status}</arg>
+<arg>${invoice_due_date}</arg>
+<arg>${invoice_comment}</arg>
+<status status="FAIL" start="2025-04-24T17:38:39.559168" elapsed="55260.476918">Error: locator.waitFor: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]' is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5716:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:5930:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:5917:30)
+    at eval (eval at evaluate (:234:30), &lt;anonymous&gt;:6:35)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:236:17)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+Call log:
+  - waiting for locator('//tr[td[@id=\'invoiceNo_INV0B151FC8\']]//td[contains(@class, \'@class, \'company_name\'\')]') to be visible
+</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Invoice ${invoice_number} has successfully been added.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-25T08:59:40.036580" elapsed="0.000241"/>
+</kw>
+<status status="FAIL" start="2025-04-24T17:38:29.814889" elapsed="55270.222346">Error: locator.waitFor: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//tr[td[@id='invoiceNo_INV0B151FC8']]//td[contains(@class, '@class, 'company_name'')]' is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5716:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:5930:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:5917:30)
+    at eval (eval at evaluate (:234:30), &lt;anonymous&gt;:6:35)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:236:17)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+Call log:
+  - waiting for locator('//tr[td[@id=\'invoiceNo_INV0B151FC8\']]//td[contains(@class, \'@class, \'company_name\'\')]') to be visible
+</status>
+</test>
+<status status="FAIL" start="2025-04-24T17:38:29.618315" elapsed="55270.447889"/>
+</suite>
+<status status="FAIL" start="2025-04-24T17:38:29.615865" elapsed="55270.480080"/>
+</suite>
+<status status="FAIL" start="2025-04-24T17:38:29.613522" elapsed="55270.484609"/>
+</suite>
+<status status="FAIL" start="2025-04-24T17:38:29.610826" elapsed="55270.489298"/>
+</suite>
+<status status="FAIL" start="2025-04-24T17:38:29.590250" elapsed="55270.511810"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Updated-Beufort-Project" id="s1" pass="0" fail="1" skip="0">Updated-Beufort-Project</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests</stat>
+<stat name="Test GUIs" id="s1-s1-s1" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs</stat>
+<stat name="Homepage" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage</stat>
+<stat name="01 Add Invoice" id="s1-s1-s1-s1-s1" pass="0" fail="1" skip="0">Updated-Beufort-Project.Tests.Test GUIs.Homepage.01 Add Invoice</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-24T17:38:29.818135" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
