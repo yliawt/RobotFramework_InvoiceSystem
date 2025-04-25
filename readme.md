@@ -17,12 +17,7 @@ To get started with this project, you need to set up the environment and depende
 
 
 **Install Robot Framework and Dependencies**:
-
-    Install the required packages using `pip`:
-
-    ```bash
     pip install -r requirements.txt
-    ```
 
 ## Test Case Structure
 
