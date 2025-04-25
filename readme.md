@@ -15,26 +15,14 @@ This repository contains the Robot Framework automation tests for the **Beaufort
 
 To get started with this project, you need to set up the environment and dependencies. Follow these steps:
 
-1. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/your-username/robotframework-beaufort.git
-    cd robotframework-beaufort
-    ```
-
-2. **Install Python**:
-
-    Ensure that Python 3.7+ is installed. You can download Python from [python.org](https://www.python.org/).
-
-3. **Install Robot Framework and Dependencies**:
+**Install Robot Framework and Dependencies**:
 
     Install the required packages using `pip`:
 
     ```bash
     pip install -r requirements.txt
     ```
-
-    The `requirements.txt` file includes dependencies such as Robot Framework, SeleniumLibrary, and other libraries used in the tests.
 
 ## Test Case Structure
 
@@ -55,32 +43,12 @@ The test cases are organized as follows:
   - **`keywords.robot`**: Custom Robot keywords.
   - **`variables.robot`**: Shared variables used across multiple test cases.
 
-## Running the Tests
 
-To run the tests, follow these steps:
-
-1. **Run all tests**:
-
-    ```bash
-    robot tests/
-    ```
-
-    This command will execute all tests under the `tests/` directory.
-
-2. **Run specific test cases**:
-
-    If you want to run a specific test case, use the following command:
-
-    ```bash
-    robot tests/login_tests.robot
-    ```
-
-3. **View the Results**:
+**View the Results**:
 
     After the tests run, you will find the results in the `output/` folder. The following files are generated:
     - `output.xml`: Raw test execution data.
     - `report.html`: A detailed test report.
     - `log.html`: A detailed log file of the test execution.
 
-## Directory Structure
 
