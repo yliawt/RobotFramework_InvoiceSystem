@@ -20,16 +20,6 @@ Verify If is navigated to main page
 
 ##Add New Invoice Number ##################################################
 
-Verify Column is Contain New Information 22
-    [Arguments]    ${column_name}   ${applied_inv_num}   ${new_value}    ${Content}
-    Wait For Elements State    xpath=//td[@id="invoiceNo_${applied_inv_num}"]    visible    timeout=30s
-    ${xpath}=    Set Variable    //tr[td[@id="invoiceNo_${applied_inv_num}"]]//td[contains(${column_name})]
-    ${target_value}=    Get Text    ${xpath}
-    Log    Updated ${Content}: ${target_value}
-    Should Contain    ${target_value}    ${new_value}
-#.format to pass xpath
-#actual and expect value as variable passing
-
 Verify Column is Contain New Information
     [Arguments]    ${column_name}   ${applied_inv_num}   ${expected_value}    ${content_label}
     ${xpath}=    Evaluate    page.column_text_in_invoice_row.format("${applied_inv_num}", "${column_name}")    modules=page
